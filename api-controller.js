@@ -30,7 +30,7 @@ module.exports = {
     const options = {
       'uri': `https://api.fortnitetracker.com/v1/profile/${platform}/${username}`,
       'headers': {
-        'TRN-Api-Key': "3bc7150c-48db-4ff2-a764-713c8bf5c9c8",
+        'TRN-Api-Key': process.env.FTOKEN,
         'Content-Type': 'application/json'
       }
     }
