@@ -8,7 +8,7 @@ bot.on(("ready"), ()=> {
     console.log("☻Bot démarré !!☻")
 });
 
-bot.login("NTUwNDE2MzIzMzczNDMyODQx.D1iH-g.Wwu1wqXDJPgCMxCzs-Zp4ZN043c");
+bot.login(process.env.TOKEN);
 
 bot.on("message", message => {
     if (message.channel.type === "dm") 
